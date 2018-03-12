@@ -1,0 +1,19 @@
+.my-works {
+  padding: 0;
+  background-color: $third-brand-color;
+  .title {
+    background-color: $second-brand-color;
+    padding: 130px 0;
+    .container {
+      justify-content: center;
+    }
+  }
+  .works {
+    .container {
+      padding: 100px 0;
+    }
+    background: -webkit-linear-gradient( -20deg, rgba(0,215,197,0.75) 0%, rgba(3,214,172,0.96) 53%, rgba(0,215,182,0.75) 100%),
+              url("../../images/my-works-bg.png") no-repeat center;
+    background-size: cover;
+  }
+}

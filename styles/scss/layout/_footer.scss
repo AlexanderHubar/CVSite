@@ -1,0 +1,58 @@
+.footer {
+  background-color: $second-brand-color;
+  .container {
+    display: block;
+  }
+  .top-footer {
+    display: flex;
+    justify-content: center;
+    padding: 105px 0;
+    .social-list {
+      a {
+        color: $brand-color;
+        font-size: 28px;
+      }
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: $third-brand-color;
+        transition: .4s;
+        &:hover {
+          background-color: $brand-color;
+          a {
+            color: $second-brand-color;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $third-brand-color;
+    padding: 35px 0;
+    a {
+      text-decoration: none;
+      color: $brand-color;
+      transition: .3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    p {
+      color: $brand-color;
+      text-align: center;
+      line-height: 22px;
+      .fa-coffee {
+        color: #755437;
+      }
+      .fa-heart {
+        color: #ff0050;
+      }
+    }
+  }
+}

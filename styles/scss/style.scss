@@ -1,0 +1,27 @@
+@import "compass";
+@import "compass/css3";
+
+@import "base/normalize";
+@import "base/base";
+@import "base/variables";
+@import "base/buttons";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/list";
+
+@import "base/sections";
+@import "layout/header";
+@import "layout/sections/welcome-section";
+@import "layout/sections/about";
+@import "layout/sections/interests";
+@import "layout/sections/hire";
+@import "layout/sections/contact";
+@import "layout/sections/education";
+@import "layout/sections/skills";
+@import "layout/sections/my-works";
+@import "layout/footer";
+
+@import "layout/adaptivity/mobile(320)";
+@import "layout/adaptivity/mobile(375)";
+@import "layout/adaptivity/tablet(500)";
+

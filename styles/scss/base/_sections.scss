@@ -1,0 +1,14 @@
+section {
+  padding: 90px 0;
+}
+body {
+  background-color: $second-brand-color;
+}
+.container {
+  @include display-flex;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,33 @@
+.hire {
+  background-color: $brand-color;
+  .container {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  h3 {
+    color: $title-color;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    position: relative;
+    .fab {
+      margin-right: 20px;
+      font-size: 70px;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    max-width: 550px;
+    text-align: center;
+    color: $title-color;
+    line-height: 20px;
+  }
+  .hire-button {
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,44 @@
+.about {
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  padding: 160px 0;
+  .foto {
+    width: 386px;
+    text-align: center;
+  }
+  .foto-wrapper {
+    position: relative;
+    width: 386px;
+    height: 387px;
+    margin-bottom: 35px;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: -43px;
+      border: 7px solid $brand-color;
+      width: 386px;
+      height: 387px;
+      z-index: -1;
+    }
+  }
+  .my-foto {
+    width: 386px;
+    height: 387px;
+    z-index: 1;
+  }
+  .about-me {
+    h3 {
+      margin-bottom: 35px;
+    }
+    width: 500px;
+    p {
+      color: $white;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}

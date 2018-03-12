@@ -1,0 +1,133 @@
+@media (min-width: 376px) and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  section {
+    padding: 45px 0;
+  }
+  .about {
+    .container {
+      justify-content: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    padding: 90px 0;
+    .my-foto, .foto-wrapper {
+      width: 320px;
+      height: 320px;
+    }
+    .foto {
+      width: auto;
+      margin-bottom: 35px;
+    }
+    .foto-wrapper::after {
+      width: 320px;
+      height: 320px;
+      left: 10px;
+      top: -24px;
+    }
+  }
+  .interests {
+    .container {
+      justify-content: center;
+    }
+    &-list {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+          .interest{
+            margin-bottom: 20px;
+          }
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  .hire {
+    .container {
+      flex-wrap: wrap;
+    }
+    h3 {
+      font-size: 2.375em;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .education {
+    h3 {
+      margin-bottom: 150px;
+    }
+    .timeline {
+      width: 220px;
+    }
+  }
+  .skills {
+    .title {
+      padding: 65px 0;
+      margin-bottom: 35px;
+    }
+    h3 {
+      font-size: 2.85em;
+      text-align: center;
+    }
+    .skills-list {
+      li {
+        width: 100%;
+        &:nth-last-child(2) {
+          margin-bottom: 60px;
+        }
+        h5 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .my-works {
+    .works {
+      .container {
+        padding: 60px 0;
+      }
+    }
+    .title {
+      padding: 65px 0;
+      text-align: center;
+    }
+    .work-list {
+      li {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .contact {
+    form {
+      input[type="text"] {
+        &:nth-child(2n) {
+          margin-bottom: 0;
+        }
+        width: 100%;
+        margin-bottom: 25px;
+        margin-right: 0;
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    h3 {
+      margin-bottom: 85px;
+    }
+  }
+}
+

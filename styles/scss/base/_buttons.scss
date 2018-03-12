@@ -1,0 +1,38 @@
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.menu {
+  width: 39px;
+  height: 23px;
+  background: url("../../images/menu-button.png") no-repeat center;
+  border: none;
+  background-size: cover;
+}
+.button {
+  display: inline-block;
+  font-size: 0.929rem;
+  padding: 20px 25px;
+  background: -webkit-linear-gradient( 5deg, rgb(0,215,197) 0%, rgba(25,204,126,0.96) 53%, rgba(11,239,156,0.92157) 100%);
+  color: $white;
+  border-radius: 5px;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 2.121px 2.121px 43px 0px rgba(38, 225, 178, 0.34);
+  }
+}
+.hire-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  height: 55px;
+  background: $title-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $brand-color;
+}

@@ -1,0 +1,116 @@
+@media (min-width: 501px) and (max-width: 768px) {
+  section {
+    padding: 45px 0;
+  }
+  .about {
+    .container {
+      justify-content: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    padding: 90px 0;
+    .foto {
+      width: auto;
+      margin-bottom: 35px;
+    }
+  }
+  .interests {
+    .container {
+      justify-content: center;
+    }
+    &-list {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &:hover {
+          cursor: pointer;
+          .interest{
+            margin-bottom: 20px;
+          }
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  .hire {
+    .container {
+      flex-wrap: wrap;
+    }
+    h3 {
+      font-size: 2.375em;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .skills {
+    .skills-list {
+      h5 {
+        margin-bottom: 30px;
+      }
+    }
+    h3 {
+      text-align: center;
+    }
+    li {
+      width: calc(50% - 20px);
+    }
+    li:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+  .my-works {
+    .works {
+      .container {
+        padding: 60px 0;
+      }
+    }
+    .title {
+      padding: 65px 0;
+      text-align: center;
+    }
+    .work-list {
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 620px) and (max-width: 768px) {
+  .my-works {
+    .work-list {
+      li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 904px) {
+  .interests-list {
+    justify-content: center;
+  }
+  .about {
+    .container {
+      justify-content: center;
+    }
+    .foto {
+      width: auto;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+
