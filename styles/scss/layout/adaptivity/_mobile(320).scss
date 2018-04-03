@@ -6,7 +6,7 @@
   section {
     padding: 45px 0;
   }
-  .about {
+  #about {
     .container {
       justify-content: center;
     }
@@ -29,16 +29,19 @@
       top: -15px;
     }
   }
-  .interests {
+  #interests {
     .container {
       justify-content: center;
     }
     &-list {
+      flex-direction: column;
+      align-items: center;
       li {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-right: 0 !important;
         &:hover {
           cursor: pointer;
           .interest{
@@ -48,9 +51,6 @@
             margin-bottom: 20px;
           }
         }
-      }
-      li:not(:last-child) {
-        margin-right: 0;
       }
     }
   }
@@ -65,7 +65,7 @@
       margin-bottom: 10px;
     }
   }
-  .education {
+  #education {
     h3 {
       margin-bottom: 150px;
     }
@@ -73,7 +73,7 @@
       width: 220px;
     }
   }
-  .skills {
+  #skills {
     .title {
       padding: 65px 0;
       margin-bottom: 35px;
@@ -94,7 +94,7 @@
       }
     }
   }
-  .my-works {
+  #my-works {
     .works {
       .container {
         padding: 60px 0;
@@ -111,7 +111,7 @@
       }
     }
   }
-  .contact {
+  #contact {
     form {
       input[type="text"] {
         &:nth-child(2n) {

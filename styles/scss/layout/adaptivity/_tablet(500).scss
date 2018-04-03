@@ -2,7 +2,7 @@
   section {
     padding: 45px 0;
   }
-  .about {
+  #about {
     .container {
       justify-content: center;
     }
@@ -15,7 +15,7 @@
       margin-bottom: 35px;
     }
   }
-  .interests {
+  #interests {
     .container {
       justify-content: center;
     }
@@ -51,7 +51,7 @@
       margin-bottom: 10px;
     }
   }
-  .skills {
+  #skills {
     .skills-list {
       h5 {
         margin-bottom: 30px;
@@ -67,7 +67,7 @@
       margin-right: 20px;
     }
   }
-  .my-works {
+  #my-works {
     .works {
       .container {
         padding: 60px 0;
@@ -86,7 +86,7 @@
   }
 }
 @media (min-width: 620px) and (max-width: 768px) {
-  .my-works {
+  #my-works {
     .work-list {
       li {
         margin-right: 20px;
@@ -102,7 +102,7 @@
   .interests-list {
     justify-content: center;
   }
-  .about {
+  #about {
     .container {
       justify-content: center;
     }

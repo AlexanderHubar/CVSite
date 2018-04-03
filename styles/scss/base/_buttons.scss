@@ -3,12 +3,47 @@ button {
     cursor: pointer;
   }
 }
-.menu {
-  width: 39px;
-  height: 23px;
-  background: url("../../images/menu-button.png") no-repeat center;
+#menu {
+  position: relative;
   border: none;
-  background-size: cover;
+  background: transparent;
+  height: 30px;
+  width: 50px;
+
+  &:before,
+  &:after {
+    background: #fff;
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: .75s;
+    width: 50px;
+  }
+
+  &:before {
+    box-shadow: #fff 0 14px 0 0;
+    position: absolute;
+    top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: calc(100% - 2px);
+  }
+
+  &.open {
+    &:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 50%;
+      transform: rotate(225deg);
+    }
+
+    &:after {
+      top: 50%;
+      transform: rotate(315deg);
+    }
+  }
 }
 .button {
   display: inline-block;

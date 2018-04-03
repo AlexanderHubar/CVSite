@@ -10,9 +10,19 @@
   <title>Alex Hubar - Frontend Developer</title>
 </head>
 <body>
+<nav class="navigation">
+  <ul>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#my-works">Works</a></li>
+    <li><a href="#contact">Contact me</a></li>
+  </ul>
+</nav>
 <section class="welcome-section">
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="header-container">
       <div class="social">
         <ul class="social-list">
           <li>
@@ -29,8 +39,10 @@
           </li>
         </ul>
       </div>
-      <button class="menu"></button>
-    </header>
+      <button id="menu"></button>
+    </div>
+  </header>
+  <div class="container">
     <div class="banner">
       <div class="wrapper">
         <h2>Hello!</h2>
@@ -38,10 +50,9 @@
         <span>Frontend Developer</span>
       </div>
     </div>
-
   </div>
 </section>
-<section class="about">
+<section id="about">
   <div class="container">
     <div class="foto">
       <div class="foto-wrapper">
@@ -78,7 +89,7 @@
     </div>
   </div>
 </section>
-<section class="interests">
+<section id="interests">
   <div class="container">
     <h3 class="gradient">My Interests</h3>
     <ul class="interests-list">
@@ -127,10 +138,10 @@
       <h3 class="hire-icon"><i class="fab fa-telegram-plane"></i>HIRE ME FOR YOUR AWESOME PROJECT</h3>
       <p>I am available for Freelance projects that depends on your project value. Hire me and get your project done!</p>
     </div>
-    <a class="button hire-button" href="#">Hire me</a>
+    <a class="button hire-button" href="https://t.me/AlexThunderson" target="_blank">Hire me</a>
   </div>
 </section>
-<section class="education">
+<section id="education">
   <div class="container">
     <h3 class="gradient">Education</h3>
     <ul class="timeline">
@@ -152,7 +163,7 @@
     </ul>
   </div>
 </section>
-<section class="skills">
+<section id="skills">
   <div class="title">
     <div class="container">
       <h3 class="gradient">Professional skills</h3>
@@ -163,42 +174,42 @@
       <li>
         <h5>HTML</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="html" class="progress html"></div>
         </div>
       <li>
         <h5>Css</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="css" class="progress css"></div>
         </div>
       </li>
       <li>
         <h5>JavaScript</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="js" class="progress js"></div>
         </div>
       </li>
       <li>
         <h5>jQuery</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="jq" class="progress jq"></div>
         </div>
       </li>
       <li>
         <h5>Photoshop</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="photoshop" class="progress photoshop"></div>
         </div>
       </li>
       <li>
         <h5>Sass</h5>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div id="sass" class="progress sass"></div>
         </div>
       </li>
     </ul>
   </div>
 </section>
-<section class="my-works">
+<section id="my-works">
   <div class="title">
     <div class="container">
       <h3 class="gradient">Some my works</h3>
@@ -278,19 +289,18 @@
       </ul>
     </div>
   </div>
-  </div>
 </section>
-<section class="contact">
+<section id="contact">
   <div class="container">
     <h3 class="gradient">Contact me</h3>
-    <form action="">
+    <form id="form">
       <ul>
         <li>
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="email" placeholder="Email" />
+          <input id="name" type="text" name="name" placeholder="Name" />
+          <input id="email" type="email" name="email" placeholder="Email" />
         </li>
         <li>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea id="message" name="message" placeholder="Message"></textarea>
         </li>
         <li>
           <button>Send now</button>
@@ -322,5 +332,7 @@
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

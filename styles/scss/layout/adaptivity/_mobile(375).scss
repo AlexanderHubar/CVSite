@@ -6,7 +6,7 @@
   section {
     padding: 45px 0;
   }
-  .about {
+  #about {
     .container {
       justify-content: center;
     }
@@ -29,7 +29,7 @@
       top: -24px;
     }
   }
-  .interests {
+  #interests {
     .container {
       justify-content: center;
     }
@@ -65,7 +65,7 @@
       margin-bottom: 10px;
     }
   }
-  .education {
+  #education {
     h3 {
       margin-bottom: 150px;
     }
@@ -73,7 +73,7 @@
       width: 220px;
     }
   }
-  .skills {
+  #skills {
     .title {
       padding: 65px 0;
       margin-bottom: 35px;
@@ -94,7 +94,7 @@
       }
     }
   }
-  .my-works {
+  #my-works {
     .works {
       .container {
         padding: 60px 0;
@@ -111,7 +111,7 @@
       }
     }
   }
-  .contact {
+  #contact {
     form {
       input[type="text"] {
         &:nth-child(2n) {

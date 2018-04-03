@@ -149,9 +149,36 @@
     border: 0;
     background-color: #0f1012;
     width: 100%;
+    .html::after {
+      content: '85%';
+      position: absolute;
+      top: -23px;
+      right: -10px;
+      font-size: 15px;
+      color: $white;
+    }
+    .css::after {
+      @extend .html::after;
+      content: '80%';
+    }
+    .js::after {
+      @extend .html::after;
+      content: '70%';
+    }
+    .jq::after {
+      @extend .html::after;
+      content: '75%';
+    }
+    .photoshop::after {
+      @extend .html::after;
+      content: '75%';
+    }
+    .sass::after {
+      @extend .html::after;
+      content: '80%';
+    }
     .progress {
       position: relative;
-      width: 35%;
       height: 5px;
       background-color: $brand-color;
       &::before {
@@ -159,19 +186,11 @@
         position: absolute;
         width: 10px;
         height: 10px;
-        box-shadow: 1px 0px 6px 0px rgba(15, 16, 18, 0.6);
+        box-shadow: 1px 0 6px 0 rgba(15, 16, 18, 0.6);
         top: -2px;
         right: -1px;
         border-radius: 50%;
         background-color: $brand-color;
-      }
-      &::after {
-        content: '35%';
-        position: absolute;
-        top: -23px;
-        right: -10px;
-        font-size: 15px;
-        color: $white;
       }
     }
   }
