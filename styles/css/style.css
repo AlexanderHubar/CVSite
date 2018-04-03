@@ -74,6 +74,7 @@ button:hover {
   right: 20px;
   bottom: 20px;
   transition: .3s;
+  z-index: 9999;
 }
 .to-top i {
   font-size: 30px;
