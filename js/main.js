@@ -171,10 +171,9 @@ $(document).scroll(function () {
     } else {
         $('.to-top').css('display', 'none');
     }
-
-    $('.to-top').click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-    });
 });
-
+$('.to-top').on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+});
 
