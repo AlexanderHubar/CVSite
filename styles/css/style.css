@@ -479,9 +479,13 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  top: 0;
   height: 75px;
   z-index: 9999;
-  transition: 1s;
+  transition: .5s;
+}
+.header .nav-up {
+  top: -75px;
 }
 .header .header-container {
   display: flex;
@@ -490,7 +494,7 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   box-sizing: border-box;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .welcome-section {
@@ -825,24 +829,24 @@ body {
   #interests .container {
     justify-content: center;
   }
-  #interests-list {
+  #interests .interests-list {
     flex-direction: column;
     align-items: center;
   }
-  #interests-list li {
+  #interests .interests-list li {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-right: 0 !important;
   }
-  #interests-list li:hover {
+  #interests .interests-list li:hover {
     cursor: pointer;
   }
-  #interests-list li:hover .interest {
+  #interests .interests-list li:hover .interest {
     margin-bottom: 20px;
   }
-  #interests-list li:hover p {
+  #interests .interests-list li:hover p {
     margin-bottom: 20px;
   }
 
@@ -893,12 +897,12 @@ body {
     margin-bottom: 10px;
   }
 
-  #contact form input[type="text"] {
+  #contact form input[type="text"], #contact form input[type="email"] {
     width: 100%;
     margin-bottom: 25px;
     margin-right: 0;
   }
-  #contact form input[type="text"]:nth-child(2n) {
+  #contact form input[type="text"]:nth-child(2n), #contact form input[type="email"]:nth-child(2n) {
     margin-bottom: 0;
   }
   #contact form li:last-child {
@@ -945,22 +949,22 @@ body {
   #interests .container {
     justify-content: center;
   }
-  #interests-list li {
+  #interests .interests-list li {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  #interests-list li:hover {
+  #interests .interests-list li:hover {
     cursor: pointer;
   }
-  #interests-list li:hover .interest {
+  #interests .interests-list li:hover .interest {
     margin-bottom: 20px;
   }
-  #interests-list li:hover p {
+  #interests .interests-list li:hover p {
     margin-bottom: 20px;
   }
-  #interests-list li:not(:last-child) {
+  #interests .interests-list li:not(:last-child) {
     margin-right: 0;
   }
 
@@ -1011,12 +1015,12 @@ body {
     margin-bottom: 20px;
   }
 
-  #contact form input[type="text"] {
+  #contact form input[type="text"], #contact form input[type="email"] {
     width: 100%;
     margin-bottom: 25px;
     margin-right: 0;
   }
-  #contact form input[type="text"]:nth-child(2n) {
+  #contact form input[type="text"]:nth-child(2n), #contact form input[type="email"]:nth-child(2n) {
     margin-bottom: 0;
   }
   #contact form li:last-child {
@@ -1048,22 +1052,22 @@ body {
   #interests .container {
     justify-content: center;
   }
-  #interests-list li {
+  #interests .interests-list li {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  #interests-list li:hover {
+  #interests .interests-list li:hover {
     cursor: pointer;
   }
-  #interests-list li:hover .interest {
+  #interests .interests-list li:hover .interest {
     margin-bottom: 20px;
   }
-  #interests-list li:hover p {
+  #interests .interests-list li:hover p {
     margin-bottom: 20px;
   }
-  #interests-list li:not(:last-child) {
+  #interests .interests-list li:not(:last-child) {
     margin-right: 0;
   }
 

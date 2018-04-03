@@ -2,7 +2,6 @@
 
 $(document).ready(function () {
     // MENU
-    $('.social').css("display", "none");
     $('#menu').click(function() {
         if (!$('.navigation').hasClass('open')) {
             $('#menu').addClass('open');
@@ -21,6 +20,17 @@ $(document).ready(function () {
                 right: '0px'
             }, 200);
         }
+    });
+
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+            $('.header').css('top', '-75px');
+        } else {
+            $('.header').css('top', '0');
+        }
+        lastScrollTop = st;
     });
 
     //Skills
@@ -115,30 +125,17 @@ function onScroll(e){
     });
 }
 
-// $(document).on('scroll', function () {
-//     var scrollPosition = $(document).scrollTop() + 75;
-//     var target = $('#about').offset().top;
-//     if(scrollPosition >= target) {
-//         $('.header').css("background", "-webkit-linear-gradient( 0deg, rgba(0,242,152,0.8) 0%, rgba(7,247,247,0.8) 100%)");
-//         $('.social').css("display", "flex");
-//         $('.header-container').css("justify-content","space-between");
-//     } else {
-//         $('.header').css("background", "transparent");
-//         $('.social').css("display", "none");
-//         $('.header-container').css("justify-content","flex-end");
-//     }
-// });
-
 document.addEventListener('scroll', function (event) {
+    var header = $('.header').height();
     var scrollPosition = $(document).scrollTop() + 75;
-    var target = $('#about').offset().top;
-    if(scrollPosition >= target) {
+    if(scrollPosition > header) {
         $('.header').css("background", "-webkit-linear-gradient( 0deg, rgba(0,242,152,0.8) 0%, rgba(7,247,247,0.8) 100%)");
         $('.social').css("display", "flex");
         $('.header-container').css("justify-content","space-between");
     } else {
         $('.header').css("background", "transparent");
-        $('.social').css("display", "none");
-        $('.header-container').css("justify-content","flex-end");
     }
 }, true);
+
+
+
