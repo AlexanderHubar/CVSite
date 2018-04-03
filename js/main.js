@@ -137,5 +137,31 @@ document.addEventListener('scroll', function (event) {
     }
 }, true);
 
+$('#minomo').on('click', function() {
+    var win = window.open('http://alexanderhubar.github.io/project1', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
+});
+$('#tajam').on('click', function() {
+    var win = window.open('http://alexanderhubar.github.io/project2', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
+});
+$('#panakeia').on('click', function() {
+    var win = window.open('http://alexanderhubar.github.io/project3', '_blank');
+    if (win) {
+        win.focus();
+    } else {
+        alert('Please allow popups for this website');
+    }
+});
+
+
 
 
