@@ -3,6 +3,31 @@ button {
     cursor: pointer;
   }
 }
+.to-top {
+  display: none;
+  background-color: #22252c;
+  border: 2px solid #05c7ae;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: .3s;
+  i {
+    font-size: 30px;
+    color: #05c7ae;
+  }
+  &:hover {
+    background-color: #05c7ae;
+    box-shadow: 2.121px 2.121px 43px 0px rgba(38, 225, 178, 0.34);
+    i {
+      color: #22252c;
+    }
+  }
+}
 #menu {
   position: relative;
   border: none;

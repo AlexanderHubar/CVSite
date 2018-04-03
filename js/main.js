@@ -162,6 +162,19 @@ $('#panakeia').on('click', function() {
     }
 });
 
+$(document).scroll(function () {
+    var scrollPosition = $(document).scrollTop();
+    var about = $('#about').scrollTop();
 
+    if ( scrollPosition > about) {
+        $('.to-top').css('display', 'flex');
+    } else {
+        $('.to-top').css('display', 'none');
+    }
+
+    $('.to-top').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    });
+});
 
 
