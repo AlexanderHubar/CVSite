@@ -1155,3 +1155,52 @@ body {
     margin-bottom: 35px;
   }
 }
+@media (min-width: 320px) and (max-width: 999px) {
+  #about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .foto {
+    margin-bottom: 35px;
+  }
+  #about h3.gradient {
+    text-align: center;
+  }
+}
+@media (min-width: 810px) and (max-width: 983px) {
+  .interests-list {
+    justify-content: center;
+  }
+  .interests-list li:last-child {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .interests-list li:nth-last-child(2) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 809px) {
+  .interests-list {
+    justify-content: center;
+  }
+  .interests-list li:last-child(2) {
+    margin-left: 80px;
+  }
+  .interests-list li:nth-last-child(3) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 949px) {
+  #my-works .work-list li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  #skills li {
+    width: calc(50% - 20px);
+  }
+  #skills li:not(:nth-child(2n)) {
+    margin-right: 20px;
+  }
+}
